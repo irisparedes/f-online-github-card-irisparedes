@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Main from './components/Main/Main';
-//import * as moment from 'moment';
+import * as moment from 'moment';
 
 class App extends Component {
 
@@ -68,12 +68,55 @@ class App extends Component {
             location,
           }
         });
+        this.calculateMemberSince( created_at );
       })
       .catch(error => error);
     }
   
   
-    
+    calculateMemberSince( created_at ) {
+      const { adalaberInfo } = this.state;
+      if (adalaberInfo) {
+        const created = moment( created_at );
+        const today = moment();
+        let years, months, days, sinceWhen;
+  
+        const _years = today.diff(created, 'year');
+        created.add(_years, 'years');
+        if (_years === 0) {
+          years = '';
+        } else if (_years === 1) {
+          years = '1 año';
+        } else {
+          years = `${_years} años`;
+        }
+  
+        const _months = today.diff(created, 'months');
+        created.add(_months, 'months');
+        if (_months === 0) {
+          months = '';
+        } else if (_months === 1) {
+          months = '1 mes y ';
+        } else {
+          months = `${_months} meses y `;
+        }
+  
+        const yearMonthConnector =
+          years === '' ? ''
+          : months === '' ? ' y '
+          : ', '
+  
+        const _days = today.diff(created, 'days');
+        if (_days === 1) {
+          days = '1 día';
+        } else {
+          days = `${_days} días`;
+        }
+  
+        sinceWhen = years + yearMonthConnector + months + days;
+        this.setState({ adalaberInfo: { ...adalaberInfo, sinceWhen } });
+        }
+    }
   
   
     render() {
