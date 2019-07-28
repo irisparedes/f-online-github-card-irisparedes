@@ -3,7 +3,7 @@ import Search from '../Search/Search';
 import Card from '../Card/Card';
 import Adalab from '../../../images/logo-adalab.svg';
 import LogoReact from '../../../images/logo.svg';
-import './Main.css'
+import './Main.scss'
 
 const Main = ({ adalabers, handleSelect, adalaberInfo }) => {
 
