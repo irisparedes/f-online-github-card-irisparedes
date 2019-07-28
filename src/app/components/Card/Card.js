@@ -31,10 +31,6 @@ const Card = ({ adalaberInfo }) => {
 								<i class="fas fa-map-marker-alt card__location-icon"></i>
 								{location || 'Algún lugar del mundo'}
 							</p>
-							{blog && <a class="card__link" href={blog}>
-								<i class={blog.includes('twitter') ? "fab fa-twitter card__blog" : "fas fa-info-circle card__blog" }></i>
-							</a>
-							}
 							<a class="card__link" href={html_url}>
 								<i class="fab fa-github-alt card__github--icon"></i>
 							</a>
@@ -53,11 +49,11 @@ const Card = ({ adalaberInfo }) => {
 								</div>
 							</div>
 							<p class="card__created_at">Miembro de GitHub desde hace {sinceWhen}</p>
-						</div>
+						 </div>
 					</div>
 				</React.Fragment>
 				:
-				<i class="fab fa-github-alt card__github--logo"></i>
+				<i class="fab fa-github card__github--logo"></i>
 			}
 		</React.Fragment>
 

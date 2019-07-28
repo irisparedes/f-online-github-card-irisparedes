@@ -1,7 +1,8 @@
 import React from 'react';
 import Search from '../Search/Search';
 import Card from '../Card/Card';
-import Adalab from '../../../images/logo.svg';
+import Adalab from '../../../images/logo-adalab.svg';
+import LogoReact from '../../../images/logo.svg';
 import './Main.css'
 
 const Main = ({ adalabers, handleSelect, adalaberInfo }) => {
@@ -16,6 +17,8 @@ const Main = ({ adalabers, handleSelect, adalaberInfo }) => {
 				adalaberInfo = { adalaberInfo }
 			/>
 			<img src={Adalab} alt="Logo Adalab" class="logo__adalab" />
+			<img src={LogoReact} alt="Logo React" class="logo__react" />
+			
 		</div>
 	);
 }

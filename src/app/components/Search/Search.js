@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Search.css';
+import './Search.css';
 
 const Search = ({ adalabers, handleSelect }) => {
 
@@ -7,7 +7,7 @@ const Search = ({ adalabers, handleSelect }) => {
 
 		<select name="adalabers" id="adalabers" class="search__select" onChange={handleSelect}>
 			
-			{adalabers && <option selected disabled hidden>Seleccionar adalaber</option>}
+			{adalabers && <option selected disabled hidden>Seleccionar Adalaber</option>}
 			{adalabers ? (
 				adalabers.map(adalaber =>
 					<option value={adalaber} class="search__option" key={adalaber}>
