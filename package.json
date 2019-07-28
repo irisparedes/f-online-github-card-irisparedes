@@ -1,6 +1,7 @@
 {
   "name": "f-online-github-card-irisparedes",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "moment": "^2.24.0",
