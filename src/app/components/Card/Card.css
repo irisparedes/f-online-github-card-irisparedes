@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500");
+.card__wrapper {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background: white;
+  height: 534px;
+  width: 320px;
+  box-shadow: 0 2px 15px 2px rgba(87, 90, 93, 0.7); }
+
+.card__inner {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.card__photo--wrapper {
+  border-radius: 10px 10px 0 0;
+  background-position: center;
+  background-size: cover;
+  height: 320px;
+  width: 320px; }
+
+.card__photo {
+  width: 0; }
+
+.card__link {
+  text-decoration: none; }
+
+.card__username {
+  margin: 5px 0 0;
+  padding: 20px 20px 0;
+  font-size: 0.9rem;
+  color: #B8B8B9; }
+
+.card__name {
+  margin: 0;
+  padding: 5px 20px;
+  font-size: 1.4rem;
+  color: green; }
+
+.card__location {
+  margin: 0;
+  color: #575A5D; }
+
+.card__location-icon {
+  padding: 10px 5px 0 20px;
+  color: #14D8C3; }
+
+.card__github--icon {
+  position: absolute;
+  bottom: 105px;
+  right: 20px;
+  font-size: 2rem;
+  color: #575A5D; }
+
+.card__blog {
+  position: absolute;
+  bottom: 105px;
+  right: 70px;
+  font-size: 2rem;
+  color: #2951a8; }
+
+.card__details--wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  background-image: linear-gradient(to top, #14D8C3, #099D8D);
+  height: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px; }
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  color: white; }
+
+.card__details--number {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center; }
+
+.card__details--title {
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: center; }
+
+.card__github--logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12rem;
+  color: rgba(87, 90, 93, 0.3); }
+
+.card__created_at {
+  position: absolute;
+  bottom: -50px;
+  left: 48%;
+  font-size: 0.8rem;
+  color: #575A5D; }
